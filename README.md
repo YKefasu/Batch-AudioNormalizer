@@ -17,14 +17,14 @@ Normalize audio files (WAV/MP3) in a folder to a target dBFS level with optional
 - Pydub library
 
 ### Install Dependencies
-"""bash
+```bash
 pip install pydub
-"""
+```
 
 ## Usage
-"""bash
+```bash
 python AudioNormalizer.py --input "path/to/folder" --target "-3dB" [--backup | --no-backup] [--log-file "log_file.log"] [--reset-log]
-"""
+```
 
 ## Arguments
 | Argument       | Description                          | Default Value |
@@ -38,19 +38,19 @@ python AudioNormalizer.py --input "path/to/folder" --target "-3dB" [--backup | -
 
 ## Example Usage
 ### Normalize with Backup
-"""bash
+```bash
 python AudioNormalizer.py --input "E:\Audio Files" --target "-3dB" --backup
-"""
+```
 
 ### Normalize without Backup
-"""bash
+```bash
 python AudioNormalizer.py --input "E:\Audio Files" --target "-3dB" --no-backup
-"""
+```
 
 ### Reset Log and Reprocess All Files
-"""bash
+```bash
 python AudioNormalizer.py --input "E:\Audio Files" --target "-3dB" --reset-log
-"""
+```
 
 ## Backup System
 - Backup files are stored in a `Backup` folder inside the input directory
