@@ -56,6 +56,7 @@ python AudioNormalizer.py --input "E:\Audio Files" --target "-3dB" --reset-log
 - Backup files are stored in a `Backup` folder inside the input directory
 - Example backup location:
 
+```
 E:\Audio Files
 ├── Backup
 │   ├── audio_file1.wav
@@ -63,7 +64,7 @@ E:\Audio Files
 ├── Audio Files
 │   ├── audio_file1.wav
 │   ├── audio_file2.mp3
-
+```
 
 ## Logging System
 - Processed files are logged in `processed_files.log` (or specified log file)
