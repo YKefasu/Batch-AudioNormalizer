@@ -58,10 +58,9 @@ python AudioNormalizer.py --input "E:\Audio Files" --target "-3dB" --reset-log
 
 ```
 E:\Audio Files
+├── audio_file1.wav
+├── audio_file2.mp3
 ├── Backup
-│   ├── audio_file1.wav
-│   ├── audio_file2.mp3
-├── Audio Files
 │   ├── audio_file1.wav
 │   ├── audio_file2.mp3
 ```
