@@ -81,9 +81,9 @@ E:\Audio Files
 ### FFmpeg Errors
 - Ensure FFmpeg is installed and accessible in your system's PATH
 - Verify FFmpeg installation:
-"""bash
+```bash
 ffmpeg -version
-"""
+```
 
 ## Contributing
 ### Guidelines
