@@ -53,8 +53,9 @@ def main():
     # Backup files
     if do_backup:
         backup_dir = os.path.join(input_folder, 'Backup')  # Placed inside the input folder
-        os.makedirs(backup_dir, exist_ok=True)
-        print(f"Backup folder created at: {backup_dir}")
+        try:
+            os.makedirs(backup_dir, exist_ok=True)
+            print(f"Backup folder created at: {backup_dir}")
         except Exception as e:
             print(f"Error creating backup folder: {e}")
             return
