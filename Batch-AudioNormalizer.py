@@ -46,7 +46,6 @@ def main():
         with open(log_file, 'r') as f:
             processed_files = set(line.strip() for line in f)
     else:
-        # Reset log
         if os.path.exists(log_file):
             os.remove(log_file)
 
@@ -107,6 +106,12 @@ def main():
                 continue
 
             peak_dB = get_peak_dBFS(audio)
+            
+            # Check if the current peak is within ±1dB of target
+            if abs(peak_dB - target_dB) <= 1.0:
+                print(f"Skipping {file}: already within ±1dB of target ({peak_dB:+.2f} dB)")
+                continue
+
             required_gain = target_dB - peak_dB
 
             try:
